@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import PrivateRoute from "@/components/PrivateRoute";
 import { authFetch } from "@/lib/api";
 
-export const eventTypes = [
+const eventTypes = [
   "Cleanup",
   "Plantation",
   "Donation",
