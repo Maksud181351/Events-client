@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "better-auth": "^1.7.18",
-    "daisyui": "^5.7.50",
+    "daisyui": "^5.0.50",
     "mongodb": "^7.8.0",
     "next": "16.4.5",
     "react": "19.3.0",
@@ -20,9 +20,10 @@
     "sweetalert2": "^11.26.25"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
     "@tailwindcss/turbopack": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4.3.5"
   }
 }
