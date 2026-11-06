@@ -2,3 +2,15 @@
 @plugin "daisyui" {
   themes: light --default, dark;
 }
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section-sub {
+  text-align: center;
+  opacity: 0.7;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
