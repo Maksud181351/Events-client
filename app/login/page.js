@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
-import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 import { authClient } from "@/lib/auth-client";
 
 function LoginForm() {
@@ -38,11 +38,11 @@ function LoginForm() {
     router.refresh();
   };
 
-  const handleGoogle = async () => {
+  const handleGithub = async () => {
     try {
-      await authClient.signIn.social({ provider: "google", callbackURL: redirect });
+      await authClient.signIn.social({ provider: "github", callbackURL: redirect });
     } catch {
-      toast.error("Google login fail hoyeche");
+      toast.error("GitHub login fail hoyeche");
     }
   };
 
@@ -61,8 +61,8 @@ function LoginForm() {
 
           <div className="divider">OR</div>
 
-          <button type="button" onClick={handleGoogle} className="btn btn-outline w-full">
-            <FcGoogle size={22} /> Continue with Google
+          <button type="button" onClick={handleGithub} className="btn btn-outline w-full">
+            <FaGithub size={20} /> Continue with GitHub
           </button>
 
           <p className="text-center text-sm">
