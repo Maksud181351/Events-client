@@ -1,6 +1,6 @@
 # SevaLink - Community Events Platform
 
-Live Site: https://YOUR-LIVE-URL.vercel.app
+Live Site: https://events-client-ew6p.vercel.app/
 
 SevaLink holo ekta community-driven platform jekhane user-ra shomaj seba mulok event create, join ar track korte pare.
 
@@ -21,4 +21,4 @@ Next.js (App Router), DaisyUI, BetterAuth, Express.js, MongoDB
 
 ## Server Repo
 
-https://github.com/YOUR-USERNAME/events-server
+https://github.com/Maksud181351/Events-server
